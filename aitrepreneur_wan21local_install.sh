@@ -2,7 +2,7 @@
 
 
 echo "Downloading Wan21_CausVid_14B_T2V_lora_rank32_v2.safetensors Loras"
-cd /workspace/ComfyUI/models/loras//loras/
+cd /workspace/ComfyUI/models/loras/
 pwd
 
 file="Wan21_CausVid_14B_T2V_lora_rank32_v2.safetensors"
@@ -20,7 +20,7 @@ fi
 
 
 echo "Downloading Wan2.1-Fun-14B-InP-MPS.safetensors Loras"
-cd /workspace/ComfyUI/models/loras//loras/
+cd /workspace/ComfyUI/models/loras/
 pwd
 
 file="Wan2.1-Fun-14B-InP-MPS.safetensors"
@@ -39,7 +39,7 @@ fi
 
 
 echo "Downloading Wan21_AccVid_I2V_480P_14B_lora_rank32_fp16.safetensors Loras"
-cd /workspace/ComfyUI/models/loras//loras/
+cd /workspace/ComfyUI/models/loras/
 pwd
 
 file="Wan21_AccVid_I2V_480P_14B_lora_rank32_fp16.safetensors"
@@ -58,7 +58,7 @@ fi
 
 
 echo "Downloading Wan14B_RealismBoost.safetensors Loras"
-cd /workspace/ComfyUI/models/loras//loras/
+cd /workspace/ComfyUI/models/loras/
 pwd
 
 file="Wan14B_RealismBoost.safetensors"
@@ -77,7 +77,7 @@ fi
 
 
 echo "Downloading wan21_DetailEnhancerV1.safetensors Loras"
-cd /workspace/ComfyUI/models/loras//loras/
+cd /workspace/ComfyUI/models/loras/
 pwd
 
 file="wan21_DetailEnhancerV1.safetensors"
@@ -96,7 +96,7 @@ fi
 
 
 echo "Downloading Wan2_1-I2V-14B-480P_fp8_e4m3fn.safetensors Diffusion Model"
-cd /workspace/ComfyUI/models/loras//diffusion_models/
+cd /workspace/ComfyUI/models/diffusion_models/
 pwd
 
 file="Wan2_1-I2V-14B-480P_fp8_e4m3fn.safetensors"
@@ -117,7 +117,7 @@ fi
 
 
 echo "Downloading clip_vision_h.safetensors Clip Vision"
-cd /workspace/ComfyUI/models/loras//clip_vision/
+cd /workspace/ComfyUI/models/clip_vision/
 pwd
 
 file="clip_vision_h.safetensors"
@@ -137,7 +137,7 @@ fi
 
 
 echo "Downloading wan21_umt5_xxl_fp8_e4m3fn_scaled.safetensors Text Encoder"
-cd /workspace/ComfyUI/models/loras//text_encoders/
+cd /workspace/ComfyUI/models/text_encoders/
 pwd
 
 file="wan21_umt5_xxl_fp8_e4m3fn_scaled.safetensors"
@@ -157,7 +157,7 @@ fi
 
 
 echo "Downloading wan_2.1_vae.safetensors VAE"
-cd /workspace/ComfyUI/models/loras//vae/
+cd /workspace/ComfyUI/models/vae/
 pwd
 
 file="wan_2.1_vae.safetensors"
@@ -174,7 +174,7 @@ fi
 
 
 echo "Downloading flux1-dev.safetensors Diffusion Models"
-cd /workspace/ComfyUI/models/loras//diffusion_models/
+cd /workspace/ComfyUI/models/diffusion_models/
 pwd
 
 file="flux1-dev.safetensors"
@@ -191,7 +191,7 @@ fi
 
 
 echo "Downloading flux1-schnell.safetensors Diffusion Models"
-cd /workspace/ComfyUI/models/loras//diffusion_models/
+cd /workspace/ComfyUI/models/diffusion_models/
 pwd
 
 file="flux1-schnell.safetensors"
@@ -209,7 +209,7 @@ fi
 
 
 echo "Downloading Wan2_1-I2V-14B-720P_fp8_e4m3fn.safetensors Diffusion Model"
-cd /workspace/ComfyUI/models/loras//diffusion_models/
+cd /workspace/ComfyUI/models/diffusion_models/
 pwd
 
 file="Wan2_1-I2V-14B-720P_fp8_e4m3fn.safetensors"
