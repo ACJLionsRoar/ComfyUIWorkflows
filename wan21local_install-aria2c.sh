@@ -36,7 +36,7 @@ echo "__________________________________________________________________________
 
 
 echo "Downloading Wan2_1-I2V-14B-480P_fp8_e4m3fn.safetensors Diffusion Model"
-aria2c -c -x 16 -s 16 https://huggingface.co/Kijai/WanVideo_comfy/resolve/main/Wan2_1-I2V-14B-480P_fp8_e4m3fn.safetensor -d /ComfyUI/models/diffusion_models/ -o Wan2_1-I2V-14B-480P_fp8_e4m3fn.safetensors
+aria2c -c -x 16 -s 16 https://huggingface.co/Kijai/WanVideo_comfy/resolve/main/Wan2_1-I2V-14B-480P_fp8_e4m3fn.safetensors -d /ComfyUI/models/diffusion_models/ -o Wan2_1-I2V-14B-480P_fp8_e4m3fn.safetensors
 echo "Download Complete"
 echo "__________________________________________________________________________________________________________"
 
