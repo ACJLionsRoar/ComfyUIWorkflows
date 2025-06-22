@@ -1,3 +1,8 @@
 Wan Models
 wget "https://raw.githubusercontent.com/ACJLionsRoar/ComfyUIWorkflows/refs/heads/main/wan21local_install.sh" 
 wget "https://raw.githubusercontent.com/ACJLionsRoar/ComfyUIWorkflows/refs/heads/main/wan21local_install%20-%20huggingfacecli.sh"
+wget "https://raw.githubusercontent.com/ACJLionsRoar/ComfyUIWorkflows/refs/heads/main/wan21local_install-aria2c.sh"
+
+
+
+
