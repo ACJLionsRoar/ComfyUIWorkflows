@@ -1,0 +1,199 @@
+#!/bin/bash
+
+pip install -U "huggingface_hub[cli]"
+
+echo "Downloading ComfyUI Workflow for Custom Wan21 by CJ"
+cd /ComfyUI/models/workflows/
+pwd
+
+file="N8N-Image2Video-Aruvi.json"
+url="https://raw.githubusercontent.com/ACJLionsRoar/ComfyUIWorkflows/refs/heads/main/N8N-Image2Video-Aruvi.json"
+
+if [ -f "$file" ]; then
+    echo "$file already exists."
+else
+    echo "Downloading $file"
+    wget -O $file $url --progress=bar:force:noscroll
+    echo "Download Complete $file. Downloaded to"
+    pwd
+fi
+
+
+
+echo "Downloading Wan21_CausVid_14B_T2V_lora_rank32_v2.safetensors Loras"
+cd /ComfyUI/models/loras/
+pwd
+
+file="Wan21_CausVid_14B_T2V_lora_rank32_v2.safetensors"
+url="https://huggingface.co/Kijai/WanVideo_comfy/blob/main/Wan21_CausVid_14B_T2V_lora_rank32_v2.safetensors?download=true"
+
+if [ -f "$file" ]; then
+    echo "$file already exists."
+else
+    echo "Downloading $file"
+    huggingface-cli download Kijai/WanVideo_comfy --include "Wan21_CausVid_14B_T2V_lora_rank32_v2.safetensors" --local-dir ./
+    echo "Download Complete $file. Downloaded to"
+    pwd
+fi
+
+
+
+
+
+
+
+echo "Downloading Wan2.1-Fun-14B-InP-MPS.safetensors Loras"
+cd /ComfyUI/models/loras/
+pwd
+
+file="Wan2.1-Fun-14B-InP-MPS.safetensors"
+url="https://huggingface.co/alibaba-pai/Wan2.1-Fun-Reward-LoRAs/blob/main/Wan2.1-Fun-14B-InP-MPS.safetensors?download=true"
+
+if [ -f "$file" ]; then
+    echo "$file already exists."
+else
+    echo "Downloading $file"
+    huggingface-cli download alibaba-pai/Wan2.1-Fun-Reward-LoRAs --include "Wan2.1-Fun-14B-InP-MPS.safetensors" --local-dir ./
+    echo "Download Complete $file. Downloaded to"
+    pwd
+fi
+
+
+
+
+echo "Downloading Wan21_AccVid_I2V_480P_14B_lora_rank32_fp16.safetensors Loras"
+cd /ComfyUI/models/loras/
+pwd
+
+file="Wan21_AccVid_I2V_480P_14B_lora_rank32_fp16.safetensors"
+url="https://huggingface.co/Kijai/WanVideo_comfy/blob/main/Wan21_AccVid_I2V_480P_14B_lora_rank32_fp16.safetensors?download=true"
+
+if [ -f "$file" ]; then
+    echo "$file already exists."
+else
+    echo "Downloading $file"
+    huggingface-cli download Kijai/WanVideo_comfy --include "Wan21_AccVid_I2V_480P_14B_lora_rank32_fp16.safetensors" --local-dir ./
+    echo "Download Complete $file. Downloaded to"
+    pwd
+fi
+
+
+
+
+echo "Downloading Wan14B_RealismBoost.safetensors Loras"
+cd /ComfyUI/models/loras/
+pwd
+
+file="Wan14B_RealismBoost.safetensors"
+url="https://huggingface.co/vrgamedevgirl84/Wan14BT2VFusioniX/resolve/main/OtherLoRa's/Wan14B_RealismBoost.safetensors?download=true"
+
+if [ -f "$file" ]; then
+    echo "$file already exists."
+else
+    echo "Downloading $file"
+    huggingface-cli download vrgamedevgirl84/Wan14BT2VFusioniX --include "Wan14B_RealismBoost.safetensors" --local-dir ./
+    echo "Download Complete $file. Downloaded to"
+    pwd
+fi
+
+
+
+
+echo "Downloading wan21_DetailEnhancerV1.safetensors Loras"
+cd /ComfyUI/models/loras/
+pwd
+
+file="wan21_DetailEnhancerV1.safetensors"
+url="https://huggingface.co/vrgamedevgirl84/Wan14BT2VFusioniX/resolve/main/OtherLoRa's/DetailEnhancerV1.safetensors?download=true"
+
+if [ -f "$file" ]; then
+    echo "$file already exists."
+else
+    echo "Downloading $file"
+    huggingface-cli download vrgamedevgirl84/Wan14BT2VFusioniX --include "DetailEnhancerV1.safetensors" --local-dir ./
+    echo "Download Complete $file. Downloaded to"
+    pwd
+fi
+
+
+
+
+echo "Downloading Wan2_1-I2V-14B-480P_fp8_e4m3fn.safetensors Diffusion Model"
+cd /ComfyUI/models/diffusion_models/
+pwd
+
+file="Wan2_1-I2V-14B-480P_fp8_e4m3fn.safetensors"
+url="https://huggingface.co/Kijai/WanVideo_comfy/resolve/main/Wan2_1-I2V-14B-480P_fp8_e4m3fn.safetensors?download=true"
+
+if [ -f "$file" ]; then
+    echo "$file already exists."
+else
+    echo "Downloading $file"
+    huggingface-cli download Kijai/WanVideo_comfy --include "Wan2_1-I2V-14B-480P_fp8_e4m3fn.safetensors" --local-dir ./
+    echo "Download Complete $file. Downloaded to"
+    pwd
+fi
+
+
+
+
+
+
+echo "Downloading clip_vision_h.safetensors Clip Vision"
+cd /ComfyUI/models/clip_vision/
+pwd
+
+file="clip_vision_h.safetensors"
+url="https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/clip_vision/clip_vision_h.safetensors?download=true"
+
+if [ -f "$file" ]; then
+    echo "$file already exists."
+else
+    echo "Downloading $file"
+    huggingface-cli download Comfy-Org/Wan_2.1_ComfyUI_repackaged --include "clip_vision_h.safetensors" --local-dir ./
+    echo "Download Complete $file. Downloaded to"
+    pwd
+fi
+
+
+
+
+
+echo "Downloading wan21_umt5_xxl_fp8_e4m3fn_scaled.safetensors Text Encoder"
+cd /ComfyUI/models/text_encoders/
+pwd
+
+file="wan21_umt5_xxl_fp8_e4m3fn_scaled.safetensors"
+url="https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/blob/main/split_files/text_encoders/umt5_xxl_fp8_e4m3fn_scaled.safetensors?download=true"
+
+if [ -f "$file" ]; then
+    echo "$file already exists."
+else
+    echo "Downloading $file"
+    huggingface-cli download Comfy-Org/Wan_2.1_ComfyUI_repackaged --include "umt5_xxl_fp8_e4m3fn_scaled.safetensors" --local-dir ./
+    echo "Download Complete $file. Downloaded to"
+    pwd
+fi
+
+
+
+
+
+echo "Downloading wan_2.1_vae.safetensors VAE"
+cd /ComfyUI/models/vae/
+pwd
+
+file="wan_2.1_vae.safetensors"
+url="https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/blob/main/split_files/vae/wan_2.1_vae.safetensors?download=true"
+
+if [ -f "$file" ]; then
+    echo "$file already exists."
+else
+    echo "Downloading $file"
+    huggingface-cli download Comfy-Org/Wan_2.1_ComfyUI_repackaged --include "wan_2.1_vae.safetensors" --local-dir ./
+    echo "Download Complete $file. Downloaded to"
+    pwd
+fi
+
+
+
