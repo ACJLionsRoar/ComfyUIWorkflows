@@ -1,25 +1,6 @@
 #!/bin/bash
 
 
-
-echo "Downloading ComfyUI Workflow for Custom Wan21 by CJ"
-cd /ComfyUI/models/workflows/
-pwd
-
-file="N8N-Image2Video-Aruvi.json"
-url="https://raw.githubusercontent.com/ACJLionsRoar/ComfyUIWorkflows/refs/heads/main/N8N-Image2Video-Aruvi.json"
-
-if [ -f "$file" ]; then
-    echo "$file already exists."
-else
-    echo "Downloading $file"
-    wget -O $file $url --progress=bar:force:noscroll
-    echo "Download Complete $file. Downloaded to"
-    pwd
-fi
-
-
-
 echo "Downloading Wan21_CausVid_14B_T2V_lora_rank32_v2.safetensors Loras"
 cd /ComfyUI/models/loras/
 pwd
@@ -243,3 +224,6 @@ else
     pwd
 fi
 
+
+pip install --upgrade torch torchvision
+pip install sageattention==1.0.6

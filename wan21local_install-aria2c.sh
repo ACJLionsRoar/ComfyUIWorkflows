@@ -4,20 +4,20 @@ apt-get update
 apt-get -y install aria2
 
 echo "Downloading Wan21_CausVid_14B_T2V_lora_rank32_v2.safetensors Loras"
-aria2c -c -x 16 -s 16 https://huggingface.co/Kijai/WanVideo_comfy/blob/main/Wan21_CausVid_14B_T2V_lora_rank32_v2.safetensors -d /ComfyUI/models/loras/ -o Wan21_CausVid_14B_T2V_lora_rank32_v2.safetensors
+aria2c -c -x 16 -s 16 https://huggingface.co/Kijai/WanVideo_comfy/resolve/main/Wan21_CausVid_14B_T2V_lora_rank32_v2.safetensors -d /ComfyUI/models/loras/ -o Wan21_CausVid_14B_T2V_lora_rank32_v2.safetensors
 echo "Download Complete"
 echo "__________________________________________________________________________________________________________"
 
 
 echo "Downloading Wan2.1-Fun-14B-InP-MPS.safetensors Loras"
-aria2c -c -x 16 -s 16 https://huggingface.co/alibaba-pai/Wan2.1-Fun-Reward-LoRAs/blob/main/Wan2.1-Fun-14B-InP-MPS.safetensors -d /ComfyUI/models/loras/ -o Wan2.1-Fun-14B-InP-MPS.safetensors
+aria2c -c -x 16 -s 16 https://huggingface.co/alibaba-pai/Wan2.1-Fun-Reward-LoRAs/resolve/main/Wan2.1-Fun-14B-InP-MPS.safetensors -d /ComfyUI/models/loras/ -o Wan2.1-Fun-14B-InP-MPS.safetensors
 echo "Download Complete"
 echo "__________________________________________________________________________________________________________"
 
 
 
 echo "Downloading Wan21_AccVid_I2V_480P_14B_lora_rank32_fp16.safetensors Loras"
-aria2c -c -x 16 -s 16 https://huggingface.co/Kijai/WanVideo_comfy/blob/main/Wan21_AccVid_I2V_480P_14B_lora_rank32_fp16.safetensors -d /ComfyUI/models/loras/ -o Wan21_AccVid_I2V_480P_14B_lora_rank32_fp16.safetensors
+aria2c -c -x 16 -s 16 https://huggingface.co/Kijai/WanVideo_comfy/resolve/main/Wan21_AccVid_I2V_480P_14B_lora_rank32_fp16.safetensors -d /ComfyUI/models/loras/ -o Wan21_AccVid_I2V_480P_14B_lora_rank32_fp16.safetensors
 echo "Download Complete"
 echo "__________________________________________________________________________________________________________"
 
@@ -52,20 +52,36 @@ echo "__________________________________________________________________________
 
 
 echo "Downloading wan21_umt5_xxl_fp8_e4m3fn_scaled.safetensors Text Encoder"
-aria2c -c -x 16 -s 16 https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/blob/main/split_files/text_encoders/umt5_xxl_fp8_e4m3fn_scaled.safetensors -d /ComfyUI/models/text_encoders/ -o wan21_umt5_xxl_fp8_e4m3fn_scaled.safetensors
+aria2c -c -x 16 -s 16 https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/text_encoders/umt5_xxl_fp8_e4m3fn_scaled.safetensors -d /ComfyUI/models/text_encoders/ -o wan21_umt5_xxl_fp8_e4m3fn_scaled.safetensors
 echo "Download Complete"
 echo "__________________________________________________________________________________________________________"
 
 
 
 echo "Downloading wan_2.1_vae.safetensors VAE"
-aria2c -c -x 16 -s 16 https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/blob/main/split_files/vae/wan_2.1_vae.safetensors -d /ComfyUI/models/vae/ -o wan_2.1_vae.safetensors
+aria2c -c -x 16 -s 16 https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/vae/wan_2.1_vae.safetensors -d /ComfyUI/models/vae/ -o wan_2.1_vae.safetensors
 echo "Download Complete"
 echo "__________________________________________________________________________________________________________"
 
 
+echo "Downloading flux1-dev.safetensors Diffusion Models"
+aria2c -c -x 16 -s 16 https://huggingface.co/black-forest-labs/FLUX.1-dev/resolve/main/flux1-dev.safetensors -d /ComfyUI/models/diffusion_models/ -o wan_2.1_vae.safetensors
+echo "Download Complete"
+echo "__________________________________________________________________________________________________________"
 
 
+echo "Downloading flux1-schnell.safetensors Diffusion Models"
+aria2c -c -x 16 -s 16 https://huggingface.co/black-forest-labs/FLUX.1-schnell/resolve/main/flux1-schnell.safetensors -d /ComfyUI/models/diffusion_models/ -o wan_2.1_vae.safetensors
+echo "Download Complete"
+echo "__________________________________________________________________________________________________________"
 
 
+echo "Downloading Wan2_1-I2V-14B-720P_fp8_e4m3fn.safetensors Diffusion Model"
+aria2c -c -x 16 -s 16 https://huggingface.co/Kijai/WanVideo_comfy/resolve/main/Wan2_1-I2V-14B-720P_fp8_e4m3fn.safetensors -d /ComfyUI/models/diffusion_models/ -o wan_2.1_vae.safetensors
+echo "Download Complete"
+echo "__________________________________________________________________________________________________________"
+
+
+pip install --upgrade torch torchvision
+pip install sageattention==1.0.6
 
