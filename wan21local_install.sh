@@ -4,7 +4,7 @@ echo "Downloading ComfyUI Workflow for Custom Wan21 by CJ"
 cd ./ComfyUI/ComfyUI_windows_portable/ComfyUI/user/default/workflows/
 
 file="N8N-Image2Video-Aruvi.json"
-url=".safetensors?download=true"
+url="https://raw.githubusercontent.com/ACJLionsRoar/ComfyUIWorkflows/refs/heads/main/wan21local_install.sh"
 
 if [ -f "$file" ]; then
     echo "$file already exists."
