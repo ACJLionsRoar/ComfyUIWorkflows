@@ -173,40 +173,6 @@ else
 fi
 
 
-echo "Downloading flux1-dev.safetensors Checkpoints"
-cd /ComfyUI/models/checkpoints/
-pwd
-
-file="flux1-dev.safetensors"
-url="https://huggingface.co/black-forest-labs/FLUX.1-dev/resolve/main/flux1-dev.safetensors"
-
-if [ -f "$file" ]; then
-    echo "$file already exists."
-else
-    echo "Downloading $file"
-    wget -O $file $url --progress=bar:force:noscroll
-    echo "Download Complete $file. Downloaded to"
-    pwd
-fi
-
-
-echo "Downloading flux1-schnell.safetensors Checkpoints"
-cd /ComfyUI/models/checkpoints/
-pwd
-
-file="flux1-schnell.safetensors"
-url="https://huggingface.co/black-forest-labs/FLUX.1-schnell/resolve/main/flux1-schnell.safetensors"
-
-if [ -f "$file" ]; then
-    echo "$file already exists."
-else
-    echo "Downloading $file"
-    wget -O $file $url --progress=bar:force:noscroll
-    echo "Download Complete $file. Downloaded to"
-    pwd
-fi
-
-
 
 echo "Downloading Wan2_1-I2V-14B-720P_fp8_e4m3fn.safetensors Diffusion Model"
 cd /ComfyUI/models/diffusion_models/
