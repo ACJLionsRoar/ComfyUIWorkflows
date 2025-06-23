@@ -1,9 +1,12 @@
 Wan Models
 
+[valyriantech/comfyui-with-flux:latest]
 wget "https://raw.githubusercontent.com/ACJLionsRoar/ComfyUIWorkflows/refs/heads/main/wan21local_install.sh" 
 
 wget "https://raw.githubusercontent.com/ACJLionsRoar/ComfyUIWorkflows/refs/heads/main/wan21local_install-aria2c.sh"
 
 
+wget "https://raw.githubusercontent.com/ACJLionsRoar/ComfyUIWorkflows/refs/heads/main/aitrepreneur_wan21local_install.sh" 
 
-
+5090 CUDA fix
+wget "https://raw.githubusercontent.com/ACJLionsRoar/ComfyUIWorkflows/refs/heads/main/5090_cuda_fix.sh" 
