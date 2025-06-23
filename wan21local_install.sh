@@ -173,8 +173,8 @@ else
 fi
 
 
-echo "Downloading flux1-dev.safetensors Diffusion Models"
-cd /ComfyUI/models/diffusion_models/
+echo "Downloading flux1-dev.safetensors Checkpoints"
+cd /ComfyUI/models/checkpoints/
 pwd
 
 file="flux1-dev.safetensors"
@@ -190,8 +190,8 @@ else
 fi
 
 
-echo "Downloading flux1-schnell.safetensors Diffusion Models"
-cd /ComfyUI/models/diffusion_models/
+echo "Downloading flux1-schnell.safetensors Checkpoints"
+cd /ComfyUI/models/checkpoints/
 pwd
 
 file="flux1-schnell.safetensors"
